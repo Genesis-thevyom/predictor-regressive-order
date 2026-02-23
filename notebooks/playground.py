@@ -1,12 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from pathlib import Path
 
 # pandas — for loading and working with tabular data
 # matplotlib — for basic plots
 # seaborn — for nicer statistical visualizations
 
-df = pd.read_csv("../data/dataset.csv")
+BASE_DIR = Path(__file__).resolve().parent.parent
+df = pd.read_csv(BASE_DIR / "data" / "dataset.csv")
 
 print(df.shape)
 # Returns (rows, columns) — tells you how big of the dataset
