@@ -14,10 +14,10 @@ print(df.shape)
 # Returns (rows, columns) — tells you how big of the dataset
 
 print(df.head())
-# Shows first 5 rows — gives you a feel for the data
+# First 5 rows — gives you a feel for the data
 
 print(df.dtypes)
-# Shows data type of each column
+# Shows data-type of each column
 # int64/float64 = numeric, object = text/categorical
 
 print(df.isnull().sum())
