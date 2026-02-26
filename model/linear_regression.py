@@ -1,3 +1,5 @@
+# SINGLE-VARIABLE LINEAR REGRESSION TRAINING IMPLEMENTATION
+
 import numpy as np
 import matplotlib.pyplot as plt
 
