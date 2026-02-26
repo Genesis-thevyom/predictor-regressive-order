@@ -62,7 +62,7 @@ def gradient_descent(X, y, w, b, learning_rate, iterations):
         w = w - learning_rate * dw
         b = b - learning_rate * db
 
-        # Compute and store cost to track model improvement
+        # Compute and store cost to track-model improvement
         cost = compute_cost(X, y, w, b)
         cost_history.append(cost)
 
@@ -71,6 +71,14 @@ def gradient_descent(X, y, w, b, learning_rate, iterations):
 
     return w, b, cost_history
 
+
+"""
+This model trains to find the best values for w (weight) and b (bias)
+so that the linear equation f(x) = wx + b fits the training data as closely as possible.
+After training, these learned parameters are used in the predict function
+to make accurate predictions on new, unseen data.
+The entire training process is focused on tuning w and b for optimal prediction.
+"""
 # main-function
 
 def main():
@@ -94,3 +102,4 @@ def main():
     plt.show()
 
 if __name__ == "__main__":    main()
+
