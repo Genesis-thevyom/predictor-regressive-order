@@ -43,9 +43,8 @@ def predict(X, w, b):
 def compute_cost(X, y, w, b):
     """
     J(w,b) = (1/2m) * sum((prediction - y)^2)
-    m is derived locally from X to avoid global-dependency.
     """
-    m_local = X.shape[0]
+    m_local = X.shape[0] # total no. of samples
     predictions = predict(X, w, b)
     cost = (1 / (2 * m_local)) * np.sum((predictions - y) ** 2)
     return cost
@@ -54,9 +53,8 @@ def compute_cost(X, y, w, b):
 def compute_gradients(X, y, w, b):
     """
     Computes gradients dJ/dw and dJ/db.
-    m is derived locally from X to avoid global-dependency.
     """
-    m_local = X.shape[0]
+    m_local = X.shape[0] # total no. of samples
     predictions = predict(X, w, b)
     errors = predictions - y
 
