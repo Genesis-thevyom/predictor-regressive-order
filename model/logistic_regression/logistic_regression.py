@@ -12,7 +12,7 @@ Post the training, the learned w and b are used in predict() to classify new dat
 The entire training process is focused on tuning w and b for optimal classification.
 
 NOTE: All ML math (sigmoid, log-loss, gradients) is implemented from scratch.
-      matplotlib is used only for visualization — not for any learning logic.
+      matplotlib is used only for visualization — not for any learning-logic.
 """
 
 import math
